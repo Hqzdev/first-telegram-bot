@@ -2,11 +2,12 @@ from aiogram import Router
 from aiogram.types import Message, ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.filters import Command
 
+
 router = Router()
 
 main_menu_keyboard = ReplyKeyboardMarkup(
     keyboard=[
-        {KeyboardButton(text='Informaton')},
+        {KeyboardButton(text='Information')},
         {KeyboardButton(text='Settings')},
         {KeyboardButton(text='Support')}   
     ],
