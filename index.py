@@ -25,8 +25,13 @@ dp.include_router(menu_router)
 # Основная функция запуска бота
 async def main():
     try:
+        # Удаляем вебхук перед запуском polling
+        await bot.delete_webhook(drop_pending_updates=True)
+        
         # Регистрируем команды
         await register_commands(bot)
+        
+        print("Бот успешно запущен!")
         # Запускаем polling
         await dp.start_polling(bot)
     except Exception as e:

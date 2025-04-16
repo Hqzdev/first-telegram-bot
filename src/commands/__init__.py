@@ -3,6 +3,7 @@ from .games import router as games_router
 from .roleplay import router as roleplay_router
 from .moderation.ban import router as ban_router
 from .fun import router as fun_router
+from .help import router as help_router
 
 def register_all_commands(dp):
     """Регистрирует все команды бота"""
@@ -10,4 +11,5 @@ def register_all_commands(dp):
     dp.include_router(games_router)
     dp.include_router(roleplay_router)
     dp.include_router(ban_router)
-    dp.include_router(fun_router) 
+    dp.include_router(fun_router)
+    dp.include_router(help_router) 
