@@ -1,1 +1,2 @@
 BOT_TOKEN = '8152394651:AAHxxJfprnS5Pq4gTG1-IAQzNAjsCm1J5NU'
+RAPIDAPI_KEY = "7243dae687msha9f5c3b34c025a3p105908jsn582f79acd1c1"  # Замените на ваш ключ с RapidAPI
